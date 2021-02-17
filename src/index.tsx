@@ -1,14 +1,15 @@
 import * as React from 'react';
 import { render } from 'react-dom';
 import Counter from './Counter';
+import MainContextProvider from './AppDataProvider';
 
 import './styles.css';
 
 function App(): JSX.Element {
   return (
-    <div className="App">
+    <MainContextProvider className="App">
       <Counter />
-    </div>
+    </MainContextProvider>
   );
 }
 
